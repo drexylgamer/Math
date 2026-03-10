@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cmath>
+#include <string>
+#include <chrono>
+#include <thread>
 
 void invalid_input() {
 	std::cerr << "Invalid input. Please enter numeric values." << std::endl;
@@ -205,9 +208,18 @@ void choose_operation() {
 
 
 int main() {
-	choose_operation();
-	std::cout << "Thank you for using the math calculator!\n Press Enter to Quit..." << std::endl;
-	std::cin.ignore();
-	std::cin.get();
+	bool running = true;
+	while(running) {
+		choose_operation();
+		std::cout << "Type \"q\" to Quit or press Enter to continue..." << std::endl;
+		std::string op;
+		std::cin.ignore(); // Ignore the newline character left in the buffer
+		std::getline(std::cin, op);
+		if (op == "q") {
+			running = false;
+			std::cout << "Thank you for using the math calculator!Type \"q\" to Quit or press Enter to continue..." << std::endl;
+			std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+		}
+	}
 	return 0;
 }
