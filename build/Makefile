@@ -116,49 +116,49 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named math_v0_0_3
+# Target rules for targets named math_v0_0_4
 
 # Build rule for target.
-math_v0_0_3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 math_v0_0_3
-.PHONY : math_v0_0_3
+math_v0_0_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 math_v0_0_4
+.PHONY : math_v0_0_4
 
 # fast build rule for target.
-math_v0_0_3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_3.dir\build.make CMakeFiles/math_v0_0_3.dir/build
-.PHONY : math_v0_0_3/fast
+math_v0_0_4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_4.dir\build.make CMakeFiles/math_v0_0_4.dir/build
+.PHONY : math_v0_0_4/fast
 
 app_icon.obj: app_icon.rc.obj
 .PHONY : app_icon.obj
 
 # target to build an object file
 app_icon.rc.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_3.dir\build.make CMakeFiles/math_v0_0_3.dir/app_icon.rc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_4.dir\build.make CMakeFiles/math_v0_0_4.dir/app_icon.rc.obj
 .PHONY : app_icon.rc.obj
 
-math_v0_0_3.obj: math_v0_0_3.cpp.obj
-.PHONY : math_v0_0_3.obj
+math_v0_0_4.obj: math_v0_0_4.cpp.obj
+.PHONY : math_v0_0_4.obj
 
 # target to build an object file
-math_v0_0_3.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_3.dir\build.make CMakeFiles/math_v0_0_3.dir/math_v0_0_3.cpp.obj
-.PHONY : math_v0_0_3.cpp.obj
+math_v0_0_4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_4.dir\build.make CMakeFiles/math_v0_0_4.dir/math_v0_0_4.cpp.obj
+.PHONY : math_v0_0_4.cpp.obj
 
-math_v0_0_3.i: math_v0_0_3.cpp.i
-.PHONY : math_v0_0_3.i
+math_v0_0_4.i: math_v0_0_4.cpp.i
+.PHONY : math_v0_0_4.i
 
 # target to preprocess a source file
-math_v0_0_3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_3.dir\build.make CMakeFiles/math_v0_0_3.dir/math_v0_0_3.cpp.i
-.PHONY : math_v0_0_3.cpp.i
+math_v0_0_4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_4.dir\build.make CMakeFiles/math_v0_0_4.dir/math_v0_0_4.cpp.i
+.PHONY : math_v0_0_4.cpp.i
 
-math_v0_0_3.s: math_v0_0_3.cpp.s
-.PHONY : math_v0_0_3.s
+math_v0_0_4.s: math_v0_0_4.cpp.s
+.PHONY : math_v0_0_4.s
 
 # target to generate assembly for a file
-math_v0_0_3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_3.dir\build.make CMakeFiles/math_v0_0_3.dir/math_v0_0_3.cpp.s
-.PHONY : math_v0_0_3.cpp.s
+math_v0_0_4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_v0_0_4.dir\build.make CMakeFiles/math_v0_0_4.dir/math_v0_0_4.cpp.s
+.PHONY : math_v0_0_4.cpp.s
 
 # Help Target
 help:
@@ -168,11 +168,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... math_v0_0_3
+	@echo ... math_v0_0_4
 	@echo ... app_icon.obj
-	@echo ... math_v0_0_3.obj
-	@echo ... math_v0_0_3.i
-	@echo ... math_v0_0_3.s
+	@echo ... math_v0_0_4.obj
+	@echo ... math_v0_0_4.i
+	@echo ... math_v0_0_4.s
 .PHONY : help
 
 
