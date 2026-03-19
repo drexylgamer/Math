@@ -5,26 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Math Program Download</title>
   <link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="app_icon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <link rel="stylesheet" href="windows95.css">
   <div class="container">
     <h1>Math Program</h1>
-    <a href="build/Debug/math_v0_0_4.exe" style="text-decoration: none;"><p class="subtitle">→ Download the latest version ←</p></a>
+    <div class="theme-selector">
+      <label for="theme-select">Theme:</label>
+      <select id="theme-select">
+        <option value="matrix">Matrix</option>
+        <option value="neon-blue">Neon Blue</option>
+        <option value="dark-green">Dark Green</option>
+        <option value="windows95">Windows 95</option>
+        <option value="solarized-dark">Solarized Dark</option>
+        <option value="cyberpunk">Cyberpunk</option>
+        <option value="disco">Disco</option>
+        <option value="twilight">Twilight</option>
+        <option value="subdued">Subdued</option>
+        <option value="gothic">Gothic</option>
+        <option value="amber">Amber</option>
+        <option value="teal">Teal</option>
+        <option value="lavender">Lavender</option>
+        <option value="ocean">Ocean</option>
+        <option value="forest">Forest</option>
+        <option value="crimson">Crimson</option>
+        <option value="midnight">Midnight</option>
+      </select>
+    </div>
+    <a href="build/Debug/math_v0_0_5.exe" style="text-decoration: none;"><p class="subtitle">→ Download the latest version ←</p></a>
     <div class="downloads">
+      <a class="download-btn" href="build/Debug/math_v0_0_5.exe" download>Download v0.0.5</a>
       <a class="download-btn" href="build/Debug/math_v0_0_4.exe" download>Download v0.0.4</a>
     </div>
     <br>
     <h2>Download Instructions</h2>
     <ol>
-      <li>Ensure that you have a right operating system (Windows 10 or later).</li>
+      <li>Ensure that you have the right operating system (Windows 10 or later).</li>
       <li>Click on the download link for the desired version.</li>
       <li>Save the file to your computer.</li>
       <li>Double-click the downloaded file to open the program.</li>
     </ol> 
+    <br>
+    <h2>About the App</h2>
+    <details class="program-description" closed>
+      <summary>Click to toggle full description</summary>
+      <p>The Math Program is a comprehensive console-based calculator designed to assist with various mathematical computations. It features functions across multiple categories:</p>
+      <h2>Financial Mathematics</h2>
+      <ul>
+        <li>Simple Interest</li>
+        <li>Compound Interest</li>
+        <li>Add/Remove GST</li>
+        <li>Simple Interest Rate Calculation</li>
+        <li>Percentage Decrease/Increase</li>
+        <li>Currency Conversion</li>
+        <li>Loan Payment Calculator</li>
+      </ul>
+      <h2>Algebra</h2>
+      <ul>
+        <li>Power/Exponentiation</li>
+        <li>Quadratic Equation Solver</li>
+      </ul>
+      <h2>Other Utilities</h2>
+      <ul>
+        <li>Speed Calculation with Time</li>
+        <li>Area Calculator (Circle, Rectangle, Triangle)</li>
+        <li>Unit Converter (Length, Weight, Temperature)</li>
+        <li>Prime Number Checker</li>
+      </ul>
+      <br>
+      <p>This program provides accurate calculations with input validation to ensure reliable results.</p>
+    </details>
     <p class="copyright">&copy; 2026 Daniel Watts</p>
   </div>
+  <script>
+    const themeSelect = document.getElementById('theme-select');
+    const root = document.body;
+
+    const applyTheme = (theme) => {
+      root.className = '';
+      if (theme) root.classList.add(`theme-${theme}`);
+    };
+
+    themeSelect.addEventListener('change', (e) => {
+      applyTheme(e.target.value);
+    });
+
+    applyTheme(themeSelect.value);
+  </script>
 </body>
 </html>

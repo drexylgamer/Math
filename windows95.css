@@ -1,0 +1,58 @@
+/* Windows 95 theme helper styles */
+body.theme-windows95 { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body.theme-windows95 .container {
+  background: #c0c0c0;
+  border: 2px solid #002BA3;
+  box-shadow: none;
+  padding: 30px 30px 50px;
+  border-radius: 0;
+}
+body.theme-windows95 h1, body.theme-windows95 h2, body.theme-windows95 h3 {
+  color: #002BA3;
+  text-shadow: none;
+}
+body.theme-windows95 .subtitle {
+  color: #000;
+  text-shadow: none;
+}
+body.theme-windows95 .download-btn {
+  background: #002BA3;
+  border: 2px outset #fff;
+  color: #fff;
+  border-radius: 0;
+}
+body.theme-windows95 .download-btn:hover {
+  border: 2px inset #fff;
+  background: #d0d0d0;
+  color: #000;
+  box-shadow: none;
+  transform: none;
+ }
+body.theme-windows95 .theme-selector select {
+  background: #fff;
+  color: #000;
+  border: 2px outset #fff;
+	border-radius: 0;
+}
+body.theme-windows95 .program-description {
+  background: #fff;
+  border: 2px inset #888;
+  border-radius: 0;
+}
+body.theme-windows95 .program-description summary {
+  background: #002BA3;
+  border: 2px outset #fff;
+  color: #fff;
+  border-radius: 0;
+}
+body.theme-windows95 .program-description[open] summary {
+  border: 2px inset #fff;
+}
+body.theme-windows95 h2::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #000;
+  margin: 6px auto 10px;
+  width: 80%;
+}
