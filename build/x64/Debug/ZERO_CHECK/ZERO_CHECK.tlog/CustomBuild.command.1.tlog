@@ -1,0 +1,10 @@
+^C:\USERS\DANIE\ONEDRIVE\DOCUMENTS\MATH\BUILD\CMAKEFILES\19C81A324FA2BECEDC01631F05FE19EB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/danie/OneDrive/Documents/Math -BC:/Users/danie/OneDrive/Documents/Math/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/danie/OneDrive/Documents/Math/build/MathApp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
